@@ -36,4 +36,11 @@ public class ListElement
 	}
 	
 }
+
+class List
+{
+	ListElement le = new ListElement();
+	le.setData(5);
+	
+}
 	
