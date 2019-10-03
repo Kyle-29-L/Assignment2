@@ -1,6 +1,6 @@
 public class ListElement
 {
-	private ListElement *next;
+	private ListElement next;
 	private int data;
 	
 	public ListElement()
@@ -8,7 +8,11 @@ public class ListElement
 		this.data = 0;
 		this.next = null;
 	}
-	
+	public ListElement(int d, ListElement n)
+    {
+        next = n;
+        data = d;
+    }
 	public void setData(int data)
 	{
 		this.data = data;
@@ -18,29 +22,19 @@ public class ListElement
 	{
 		return this.data;
 	}
-	public void addElement()
-	{	
-	
-	}
-	public ListElement getElement (int index)
-	{
-		
-	}
-	public ListElement deleteElement (int index)
-	{
-		
-	}
-	public void printLinkedListHead()
-	{
-		
-	}
-	
-}
 
-class List
-{
-	ListElement le = new ListElement();
-	le.setData(5);
+	public void setNext(ListElement n) 
+    {
+        next = n;
+    }	
 	
+	public ListElement getNext() 
+    {
+        return next;
+    }
+
+	public void print()
+	{
+		System.out.print(data + " ");
+	}
 }
-	
